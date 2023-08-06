@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+.nav-header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:1rem;
+}
+.nav-toggle{
+    font-size: 1.5rem;
+    cursor:pointer;
+    border:none;
+    background: transparent;
+     background:white; 
+
+} */
+/*.nav-toggle:hover{
+    transform:rotate(90deg);
+}
+.logo{
+    height:40px;
+}
+.social-icons{
+    display:none;
+}
+.links a{
+    text-transform: capitalize;
+    font-size:1rem;
+    padding: 0.5rem 1rem;
+    display:block;
+} */
+/* We are giving shadow to whole navigation bar. */
+nav{
+    background:#fff;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+.social-icons{
+    display:none;
+}
+.links a{
+  text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.nav-header{
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    padding:1rem;
+}
+.logo {
+     /* we can't give size to inbuild image. */
+    /* font-size: 2rem; */ 
+    height:2.2rem;
+}
+.nav-toggle{
+    font-weight: bold;
+    border:none;
+    background:transparent;
+    font-size: 1.3rem;
+    transition:all 0.3s linear;
+}
+.nav-toggle:hover{
+    transform: rotate(90deg);
+}
+.links a{
+    display:block;
+    color:black;
+    text-transform: capitalize;
+    line-height: 2rem;
+    padding-left:1.4rem;
+    font-size: 1.2rem;
+    transition:all 0.3s linear;
+
+}
+.links a:hover{
+    background-color:rgb(239, 243, 242);
+}
+.links{
+    height:0;
+    overflow:hidden;
+    transition:all 0.3s linear;
+}
+.show-links{
+    height:8rem;
+}
+@media screen and (min-width: 800px){
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    .nav-center{
+        /* setting the max-width of the container is 1170px. If the width
+        is less than 1170px. Then it will automatically adjust its width */
+        max-width: 1170px;
+        /* It is used to center the nav-center container horizontally */
+        margin:0 auto;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:1rem;
+    }
+    .nav-header{
+        padding:0;
+    }
+    .nav-toggle{
+        display:none;
+    }
+    .links{
+        height:auto;
+        display:flex; 
+        /* align-items:center; */
+    }
+    .links a{
+        padding:0;
+        margin:0 0.5rem;
+    }
+    .social-icons{
+        display:flex;
+        height:auto;
+    }
+    .social-icons a{
+        margin:0 0.5rem;
+        /* color:blue; */
+        color:hsl(205, 78%, 60%);
+        transition:all 0.3s linear;
+    }
+    .social-icons a:hover{
+        color:hsl(205, 90%, 76%);
+    }
+}
